@@ -57,3 +57,16 @@ typings/
 # dotenv environment variables file
 .env
 
+# MacOS
+.DS_Store
+
+# docusaurus files
+lib/core/metadata.js
+lib/core/MetadataBlog.js
+
+website/translated_docs
+website/build/
+website/yarn.lock
+website/node_modules
+website/i18n/*
+!website/i18n/en.json
