@@ -1,5 +1,11 @@
-const sum = require('./sum');
+import { readySeed, readyDownload } from 'lib/torrent.js';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+describe('Create files', () => {
+    test('Files created', () => {
+        expect(readySeed).toBeTruthy();
+    });
+
+    test('Check torrented files', () => {
+        expect(readyDownload).toBeTruthy();
+    });
 });
